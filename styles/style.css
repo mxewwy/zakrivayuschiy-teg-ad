@@ -57,6 +57,7 @@
 }
 .card__media {
   position: relative;
+  overflow: hidden;
   border-block: 2px solid var(--accent-color, #000);
 }
 .card__image {
