@@ -1,6 +1,7 @@
 const saveButton = document.querySelector('.save-button');
 const saveDialog = document.querySelector('#save-dialog');
 saveButton.addEventListener('click', () => saveDialog.showModal());
+document.querySelector('.dialog__button').addEventListener('click', () => saveDialog.close());
 document.querySelectorAll('.card').forEach((card) => {
   const heart = card.querySelector('.like-icon');
   const buttons = card.querySelectorAll('.card__icon-button, .card__like-button');

@@ -51,12 +51,22 @@
   animation: spark-flash 0.3s ease-in 0.3s 1;
 }
 @keyframes heart-beat {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.25); }
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.25);
+  }
 }
 @keyframes spark-flash {
-  0%, 100% { opacity: 0; }
-  50% { opacity: 1; }
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   .like-icon.is-liked .heart,
